@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  padding: 0 20px;
+  background-color: PERU;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  width: 100vw;
+}
+
+.navbar-link {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 0 50px;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin: 0 auto;
+}
+
+button {
+  margin-right: 9em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: brown;
+}
+
+/* ---------------MENU------------------ */
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 45vw;
+  min-height: 70vh;
+  padding-bottom: 2.5rem;
+  margin-bottom: 40px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------------FOOTER------------ */
+
+footer {
+  font-size: 14px;
+  background-color: peru;
+  height: 30vh;
+  margin-top: auto;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+.link-title {
+  margin: 30px 0;
+}
+
+iframe {
+  margin-bottom: 15px;
+}
+
+.address {
+  font-size: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+
+@media all and (max-width: 415px) {
+  .menu {
+    max-width: 85%;
+  }
+
+  footer {
+    overflow: visible;
+    height: 100%;
+    margin-top: 6em;
+  }
+
+  .links-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  button {
+    margin-left: 5em;
+  }
+}
